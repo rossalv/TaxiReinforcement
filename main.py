@@ -5,7 +5,7 @@ import random
 
 def main():
     # create Taxi environment
-    env = gym.make('Taxi-v3')
+    env = gym.make("Taxi-v3")
 
     # initialize q-table
     state_size = env.observation_space.n
@@ -59,7 +59,7 @@ def main():
     input("Press Enter to watch trained agent...")
 
     # watch trained agent
-    env = gym.make('Taxi-v3', render_mode='human')
+    env = gym.make("Taxi-v3", render_mode="human")
     state = env.reset()[0]
     done = False
     rewards = 0
